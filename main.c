@@ -4,12 +4,12 @@
 #define N 4
 
 void
-__populate_nines(int *__nines,
+__populate_nines(int __nines[],
                  int  n)
 {
   __nines[0] = 9;
 
-  for (int i = 1; i < n; i++)
+  for (int i = 1; i < n - 1; i++)
     {
       int __nine = i;
 
@@ -28,7 +28,7 @@ int
 main(int   argc,
      char *argv)
 {
-  int *__nines = NULL;
+  int __nines[N - 1] = { 0 };
   int pan = 1;
 
   for (int i = 2; i <= N; i++)
@@ -37,7 +37,6 @@ main(int   argc,
       pan = start;
     }
 
-  __nines = (int *) (malloc (sizeof (int) * (N - 1)));
   __populate_nines (__nines, N);
 
   for (int i = 0; i < N - 1; i++)
