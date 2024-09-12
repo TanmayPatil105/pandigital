@@ -1,6 +1,6 @@
 ## Pandigital Brainfuck
 
-This program tries to print the highest N-digit pandigital number BUT using **Mathematics**.
+This program tries to print the highest N-digit pandigital number containing 1-N BUT using **Mathematics**.
 
 ### forLoopWasEasierAndSimpler 
 ```
