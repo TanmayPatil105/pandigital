@@ -47,5 +47,21 @@ Difference between differences:
 
 There's pattern here: "N" + "8" * N + "9"
 
-
 Finally, 4321 = 1234 + 2889 + 189 + 9!
+
+### Hmmm
+```shell
+~/D/p/pandigital (main)> hyperfine --warmup 10 './main' './main2' --shell=none
+Benchmark 1: ./main
+  Time (mean ± σ):       2.4 ms ±   0.1 ms    [User: 0.5 ms, System: 1.6 ms]
+  Range (min … max):     2.1 ms …   3.2 ms    1183 runs
+ 
+Benchmark 2: ./main2
+  Time (mean ± σ):       2.5 ms ±   0.1 ms    [User: 0.5 ms, System: 1.6 ms]
+  Range (min … max):     2.3 ms …   3.3 ms    1165 runs
+ 
+Summary
+  ./main ran
+    1.01 ± 0.08 times faster than ./main2
+
+```
